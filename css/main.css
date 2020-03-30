@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap");
+
+/* Base Style */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font: 1em/1.6 "Montserrat", helvetica, arial, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Patrick Hand", cursive;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
