@@ -1,0 +1,28 @@
+/* Mobile layout for home page */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(50, auto);
+  grid-template-areas:
+    "header header"
+    "main main"
+    "side-bar side-bar"
+    "footer footer";
+}
+
+.main-header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: main;
+}
+
+.side-bar {
+  grid-area: side-bar;
+}
+
+.main-footer {
+  grid-area: footer;
+}

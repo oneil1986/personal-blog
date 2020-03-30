@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap");
+@import url("home-layout.css");
 
 /* Base Style */
 
@@ -13,6 +14,7 @@ html {
 }
 
 body {
+  text-align: center;
   margin: 0;
   font: 1em/1.6 "Montserrat", helvetica, arial, sans-serif;
 }
