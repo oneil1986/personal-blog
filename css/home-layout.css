@@ -24,6 +24,27 @@
   grid-area: main;
 }
 
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.blog-section .context {
+  text-align: left;
+  padding: 2px 16px;
+  border-top: 1px solid #000;
+}
+
+.context a {
+  background: #ff8e3c;
+  color: #0d0d0d;
+  padding: 5px;
+  border-radius: 10px;
+  border-bottom: 1px solid #000;
+}
+
 .side-bar {
   grid-area: side-bar;
   padding: 15px;
@@ -31,6 +52,15 @@
 
 .side-bar img {
   max-width: 100%;
+}
+
+.social-nav {
+  margin: 15px auto;
+}
+
+.social-nav li {
+  display: inline-block;
+  padding: 5px;
 }
 
 hr {
