@@ -14,9 +14,13 @@ html {
 }
 
 body {
-  text-align: center;
   margin: 0;
   font: 1em/1.6 "Montserrat", helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+.main-header {
+  background: #eff0f3;
 }
 
 h1 {
@@ -25,6 +29,63 @@ h1 {
   text-transform: uppercase;
 }
 
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.main-nav li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Home page colors */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0d0d0d;
+}
+
+.main-nav li:first-child {
+  background: #ff8e3c;
+}
+
+.main-nav li:hover {
+  border-bottom: 1px solid #000;
+  background: #ff8e3c;
+}
+
+.main-nav li a {
+  color: #0d0d0d;
+}
+
 a {
   text-decoration: none;
+}
+
+.content {
+  background: #fffffe;
+}
+
+.content .card {
+  background: #eff0f3;
+  color: #2a2a2a;
+}
+
+.side-bar {
+  background: #fffffe;
+  color: #2a2a2a;
+}
+
+.main-footer {
+  background: #eff0f3;
+  color: #2a2a2a;
 }
