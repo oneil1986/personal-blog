@@ -1,9 +1,8 @@
-/* Mobile layout for home page */
+/* || Mobile layout   */
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(50px, auto);
   min-height: 100vh;
   grid-template-areas:
     "header header"
@@ -71,4 +70,31 @@ hr {
 .main-footer {
   margin-top: auto;
   grid-area: footer;
+}
+
+/* blog layout */
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: minmax(50px, auto);
+  min-height: 100vh;
+  grid-template-areas:
+    "header header"
+    "article article"
+    "footer footer";
+}
+
+section {
+  margin: auto;
+}
+
+article {
+  grid-area: article;
+  text-align: left;
+  padding: 20px;
+}
+
+.go-back {
+  padding: 10px 0;
 }
