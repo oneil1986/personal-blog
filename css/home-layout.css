@@ -2,13 +2,14 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px, auto);
   min-height: 100vh;
   grid-template-areas:
-    "header header"
-    "main main"
-    "side-bar side-bar"
-    "footer footer";
+    "header"
+    "main"
+    "side-bar"
+    "footer";
 }
 
 .main-header {
@@ -40,7 +41,6 @@
   background: #ff8e3c;
   color: #0d0d0d;
   padding: 5px;
-  border-radius: 10px;
   border-bottom: 1px solid #000;
 }
 
@@ -54,12 +54,12 @@
 }
 
 .social-nav {
-  margin: 15px auto;
+  margin: 5px auto;
 }
 
 .social-nav li {
   display: inline-block;
-  padding: 5px;
+  padding: 15px;
 }
 
 hr {
@@ -76,25 +76,17 @@ hr {
 
 .blog-container {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: 1fr;
   grid-auto-rows: minmax(50px, auto);
   min-height: 100vh;
   grid-template-areas:
-    "header header"
-    "article article"
-    "footer footer";
-}
-
-section {
-  margin: auto;
+    "header"
+    "article"
+    "footer";
 }
 
 article {
   grid-area: article;
   text-align: left;
   padding: 20px;
-}
-
-.go-back {
-  padding: 10px 0;
 }
