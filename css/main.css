@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap");
 @import url("home-layout.css");
+@import url(tablet-layout.css);
 
 /* Base Style */
 
@@ -76,13 +77,14 @@ a {
 }
 
 .content .card {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   background: #eff0f3;
   color: #2a2a2a;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .content .card:hover {
@@ -92,6 +94,31 @@ a {
 .side-bar {
   background: #fffffe;
   color: #2a2a2a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #ff8e3c;
+  border: none;
+  color: #0d0d0d;
+  padding: 10px 20px;
+  font-size: 1rem;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 1;
 }
 
 .main-footer {
